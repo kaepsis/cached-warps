@@ -1,0 +1,5 @@
+name: CachedWarps
+main: dev.kaepsis.cachedwarps.Main
+author: Kaepsis
+version: ${version}
+api-version: 1.21
