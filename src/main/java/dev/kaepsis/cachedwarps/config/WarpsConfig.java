@@ -13,6 +13,12 @@ import java.util.Map;
 public class WarpsConfig extends BaseConfig {
 
     private static WarpsConfig instance;
+    @Path("warps")
+    public Map<String, Location> warps = Map.of();
+
+    private WarpsConfig() {
+
+    }
 
     public static WarpsConfig getInstance() {
         if (instance == null) {
@@ -20,12 +26,5 @@ public class WarpsConfig extends BaseConfig {
         }
         return instance;
     }
-
-    private WarpsConfig() {
-
-    }
-
-    @Path("warps")
-    public Map<String, Location> warps = Map.of();
 
 }

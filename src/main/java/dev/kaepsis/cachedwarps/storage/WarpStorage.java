@@ -11,14 +11,15 @@ public class WarpStorage {
 
     private static WarpStorage instance = null;
 
+    private WarpStorage() {
+    }
+
     public static WarpStorage getInstance() {
         if (instance == null) {
             instance = new WarpStorage();
         }
         return instance;
     }
-
-    private WarpStorage() {}
 
     public void loadWarps() {
         Main.loadedWarps.putAll(WarpsConfig.getInstance().warps);
