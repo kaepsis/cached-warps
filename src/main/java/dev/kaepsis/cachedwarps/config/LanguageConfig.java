@@ -9,7 +9,7 @@ import net.pino.simpleconfig.annotations.inside.Path;
 @ConfigFile("lang.yml")
 public class LanguageConfig extends BaseConfig {
 
-    private static LanguageConfig instance;
+    private static LanguageConfig instance = null;
     @Path("errors.cannot-find-warp")
     public String CANNOT_FIND_WARP = "&9&lWARPS &8| &cCouldn't find a warp named $name";
     @Path("setwarp.usage")
@@ -24,6 +24,8 @@ public class LanguageConfig extends BaseConfig {
     public String WARP_TELEPORTED = "&9&lWARPS &8| &aYou've been teleported to warp &f$name";
     @Path("warp.list")
     public String WARP_LIST = "&9&lWARPS &8| &aThere are &f$count &aavailable warps&7: &f$warps";
+    @Path("errors.no-warps-defined")
+    public String NO_WARPS_DEFINED = "&9&lWARPS &8| &cThere are no warps defined";
     @Path("delwarp.usage")
     public String DELWARP_USAGE = "&9&lWARPS &8| &cCorrect usage is /delwarp <name>";
     @Path("delwarp.success")

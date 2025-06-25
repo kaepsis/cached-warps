@@ -2,6 +2,7 @@ package dev.kaepsis.cachedwarps.commands;
 
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.CommandAlias;
+import co.aikar.commands.annotation.CommandCompletion;
 import co.aikar.commands.annotation.Default;
 import co.aikar.commands.annotation.Syntax;
 import dev.kaepsis.cachedwarps.config.LanguageConfig;
@@ -19,6 +20,7 @@ public class CommandWarp extends BaseCommand {
 
     @Default
     @Syntax("<name>")
+    @CommandCompletion("@cachedWarps")
     public void withName(Player player, String name) {
         if (!WarpStorage.getInstance().existsWarp(name)) {
             Chat.getInstance().send(player, LanguageConfig.getInstance().CANNOT_FIND_WARP, "$name", name);

@@ -47,14 +47,14 @@ public class WarpStorage {
     }
 
     public void createWarp(Player player, String warpName) {
-        WarpsConfig.getInstance().warps.put(warpName, player.getLocation());
-        WarpsConfig.getInstance().reload();
+        WarpsConfig.getInstance().fileConfiguration.set("warps." + warpName, player.getLocation());
+        WarpsConfig.getInstance().saveAndReload();
         Main.loadedWarps.put(warpName, player.getLocation());
     }
 
     public void deleteWarp(String warpName) {
-        WarpsConfig.getInstance().warps.remove(warpName);
-        WarpsConfig.getInstance().reload();
+        WarpsConfig.getInstance().fileConfiguration.set("warps." + warpName, null);
+        WarpsConfig.getInstance().saveAndReload();
         Main.loadedWarps.remove(warpName);
     }
 

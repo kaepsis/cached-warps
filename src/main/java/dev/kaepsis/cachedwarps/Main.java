@@ -34,7 +34,7 @@ public class Main extends JavaPlugin {
     }
 
     void config() {
-        WarpsConfig.getInstance().registerConfig(this);
+        WarpsConfig.getInstance().registerLightConfig(this);
         LanguageConfig.getInstance().registerConfig(this);
     }
 

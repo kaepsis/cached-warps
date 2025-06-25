@@ -15,6 +15,11 @@ public class CommandListwarps extends BaseCommand {
 
     @Default
     public void root(Player player) {
+        int warpsCount = WarpStorage.getInstance().getWarpsNames().size();
+        if (warpsCount == 0) {
+            Chat.getInstance().send(player, LanguageConfig.getInstance().NO_WARPS_DEFINED);
+            return;
+        }
         Chat.getInstance().send(
                 player,
                 LanguageConfig.getInstance().WARP_LIST,
