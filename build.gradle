@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'dev.kaepsis.cachedwarps'
-version = '1.1'
+version = '1.2'
 description = "cached-warps"
 
 repositories {
@@ -23,7 +23,7 @@ dependencies {
     implementation 'com.github.NaTorOG:SimpleConfig:1.0.6'
     compileOnly 'org.spigotmc:spigot-api:1.21.5-R0.1-SNAPSHOT'
     implementation "co.aikar:acf-paper:0.5.1-SNAPSHOT"
-    implementation "com.github.kaepsis:kmanagers:v1.8.4"
+    implementation "com.github.kaepsis:kutils:v1.9.3"
 }
 
 processResources {

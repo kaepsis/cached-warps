@@ -2,6 +2,7 @@ package dev.kaepsis.cachedwarps.commands;
 
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.*;
+import com.github.kaepsis.Chat;
 import dev.kaepsis.cachedwarps.config.LanguageConfig;
 import dev.kaepsis.cachedwarps.storage.WarpStorage;
 import dev.kaepsis.kmanagers.Chat;
