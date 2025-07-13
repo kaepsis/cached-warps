@@ -8,7 +8,6 @@ import co.aikar.commands.annotation.Syntax;
 import com.github.kaepsis.Chat;
 import dev.kaepsis.cachedwarps.config.LanguageConfig;
 import dev.kaepsis.cachedwarps.storage.WarpStorage;
-import dev.kaepsis.kmanagers.Chat;
 import org.bukkit.entity.Player;
 
 @CommandAlias("setwarp")

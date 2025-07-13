@@ -7,7 +7,6 @@ import co.aikar.commands.annotation.Subcommand;
 import com.github.kaepsis.Chat;
 import dev.kaepsis.cachedwarps.config.LanguageConfig;
 import dev.kaepsis.cachedwarps.config.WarpsConfig;
-import dev.kaepsis.kmanagers.Chat;
 import org.bukkit.command.CommandSender;
 
 @CommandAlias("acw")
